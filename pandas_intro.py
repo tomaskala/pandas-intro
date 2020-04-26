@@ -24,11 +24,12 @@
 # * Velká část datové analýzy obnáší právě práci s Pandas.
 # * Datový soubor reprezentuje podobně jako tabulka v databázích, "DataFrame".
 
-# ## 01 Základní práce s DataFrame
+# ## 1. Základní práce s DataFrame
 
 # ### Načítání dat
 
-# * Pandas umí načítat všechny možné formáty -- CSV, JSON, Excel, HTML, SQL databáze, a spoustu dalších.
+# * Pandas umí načítat všechny možné formáty -- CSV, JSON, Excel, HTML, SQL databáze, a spoustu dalších, stejně tak je možné do nich ukládat.
+#     * Toho lze využít např. pro převod dat z Excelu do CSV.
 # * Rovněž umožňují stáhnout data z internetu -- místo cesty k souboru na disku dáme URL adresu.
 # * Podporují kompresi -- ZIP archivy a podobně.
 
@@ -41,7 +42,7 @@ mesta
 
 # ### Základní informace o tabulce
 
-# Datové typy, názvy sloupců, počet neprázdných pozorování.
+# Datové typy, názvy sloupců, počet neprázdných hodnot.
 
 mesta.info()
 
@@ -53,7 +54,9 @@ mesta.shape
 
 mesta.columns
 
-# Základní statistické údaje.
+list(mesta)
+
+# Základní statistické údaje -- jen na číselných sloupcích.
 
 mesta.describe()
 
@@ -61,7 +64,7 @@ mesta.describe()
 
 mesta.head()
 
-# ## 02 Základní selekce
+# ## 2. Základní selekce
 
 # ![DataFrame](dataframe.svg)
 
@@ -82,6 +85,8 @@ mesta.loc[["brno"]]
 # Lze použít také rozsah (záleží samozřejmě na pořadí, v jakém máme data uložena).
 
 mesta.loc["most":"praha"]
+
+# Pozor na pořadí.
 
 mesta.loc["praha":"most"]
 
@@ -127,7 +132,7 @@ mesta.iloc[2, 1:]
 
 mesta.iloc[[2, 3, 5], [0, 1]]
 
-# ## 03 Ukládání dat
+# ## 3. Ukládání dat
 
 mesta.to_csv("data.csv")
 
@@ -143,20 +148,24 @@ mesta.to_json("data.json", indent=4)
 
 
 
-# ## 04 Index
+# ## 4. Index
 
 # ![DataFrame](dataframe.svg)
 
 mesta = pandas.read_csv('mesta.csv', encoding='utf-8')
 mesta
 
+# Index je teď číselný. Přístup pomocí názvu řádků (`loc`) nebo pomocí jejich čísel (`iloc`) je teď velmi podobný. Jediný rozdíl je v indexování rozsahem.
+
 mesta.loc[:4]
 
 mesta.iloc[:4]
 
+# Index můžeme manuálně nastavit na jeden ze sloupců. Ten potom zmizí z datové části, a přesune se do pozice indexu.
+
 mesta.set_index("mesto")
 
-# ## 05 Dotazy jako v SQL
+# ## 5. Dotazy jako v SQL
 
 # Srovnáním DataFrame s tabulkou podobnost s databázemi nekončí. Pandas umožňují dotazovat se nad daty podobným způsobem jako SQL.
 
@@ -195,7 +204,7 @@ mesta[mesta['kraj'].isin(['JHM', 'ULK', 'OLK'])][['linky']]
 
 mesta[~mesta['kraj'].isin(['JHM', 'ULK', 'OLK'])][['linky']]
 
-# ## 06 Převod mezi DataFrame a seznamy
+# ## 6. Převod mezi DataFrame a seznamy
 
 # ### DataFrame -> seznam
 
@@ -215,6 +224,8 @@ list(mesta)
 # ### Seznam -> DataFrame
 
 pandas.DataFrame(mesta_seznam)
+
+# To funguje, akorát Pandas neví jak pojmenovat sloupce -- v seznamu žádná taková informace není. Pokud se nám nelíbí čísla která automatický dosadí, dodáme názvy sloupců sami.
 
 pandas.DataFrame(mesta_seznam, columns=["mesto", "kraj", "obyvatel", "linky", "vymera"])
 
