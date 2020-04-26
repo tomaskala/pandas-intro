@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="179.92mm" height="111.12mm" version="1.1" viewBox="0 0 179.92 111.12" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&amp;subset=latin-ext');
+  </style>
+  <marker id="Arrow1Mend" overflow="visible" orient="auto">
+   <path transform="matrix(-.4 0 0 -.4 -4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill-rule="evenodd" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow2Mend" overflow="visible" orient="auto">
+   <path transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+ </defs>
+ <g transform="translate(-5.2917 -5.9583)">
+  <rect x="5.2917" y="5.9583" width="179.92" height="111.12" fill="#fdfdfd"/>
+  <rect x="58.208" y="45.646" width="116.42" height="7.9375" fill="#fff"/>
+  <g fill="#000000" font-family="Lato" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+   <text x="63.500027" y="50.9375" style="line-height:1.25" xml:space="preserve"><tspan x="63.500027" y="50.9375" font-family="Raleway" font-weight="bold" stroke-width=".26458">brno</tspan></text>
+   <text x="92.604195" y="50.9375" style="line-height:1.25" xml:space="preserve"><tspan x="92.604195" y="50.9375" font-family="Raleway" stroke-width=".26458">JHM</tspan></text>
+   <text x="129.64584" y="50.9375" style="line-height:1.25" xml:space="preserve"><tspan x="129.64584" y="50.9375" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">379 527</tspan></text>
+   <text x="145.52084" y="50.9375" style="line-height:1.25" xml:space="preserve"><tspan x="145.52084" y="50.9375" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">22</tspan></text>
+   <text x="169.33333" y="50.9375" style="line-height:1.25" xml:space="preserve"><tspan x="169.33333" y="50.9375" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">230.22</tspan></text>
+  </g>
+  <rect x="58.208" y="53.583" width="116.42" height="7.9375" fill="#ffffb9"/>
+  <g fill="#000000" font-family="Lato" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+   <text x="63.500023" y="58.875" style="line-height:1.25" xml:space="preserve"><tspan x="63.500023" y="58.875" font-family="Raleway" font-weight="bold" stroke-width=".26458">liberec</tspan></text>
+   <text x="92.604195" y="58.875" style="line-height:1.25" xml:space="preserve"><tspan x="92.604195" y="58.875" font-family="Raleway" stroke-width=".26458">LBK</tspan></text>
+   <text x="129.64584" y="58.875" style="line-height:1.25" xml:space="preserve"><tspan x="129.64584" y="58.875" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">103 979</tspan></text>
+   <text x="145.52084" y="58.875" style="line-height:1.25" xml:space="preserve"><tspan x="145.52084" y="58.875" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">6</tspan></text>
+   <text x="169.33333" y="58.875" style="line-height:1.25" xml:space="preserve"><tspan x="169.33333" y="58.875" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">106.09</tspan></text>
+  </g>
+  <rect x="58.208" y="61.521" width="116.42" height="7.9375" fill="#fff"/>
+  <g fill="#000000" font-family="Lato" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+   <text x="63.500023" y="66.8125" style="line-height:1.25" xml:space="preserve"><tspan x="63.500023" y="66.8125" font-family="Raleway" font-weight="bold" stroke-width=".26458">litvinov</tspan></text>
+   <text x="92.604195" y="66.8125" style="line-height:1.25" xml:space="preserve"><tspan x="92.604195" y="66.8125" font-family="Raleway" stroke-width=".26458">ULK</tspan></text>
+   <text x="129.64584" y="66.8125" style="line-height:1.25" xml:space="preserve"><tspan x="129.64584" y="66.8125" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">24 143</tspan></text>
+   <text x="145.52084" y="66.8125" style="line-height:1.25" xml:space="preserve"><tspan x="145.52084" y="66.8125" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">5</tspan></text>
+   <text x="169.33333" y="66.8125" style="line-height:1.25" xml:space="preserve"><tspan x="169.33333" y="66.8125" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">40.70</tspan></text>
+  </g>
+  <rect x="58.208" y="69.458" width="116.42" height="7.9375" fill="#ffffb9"/>
+  <g fill="#000000" font-family="Lato" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+   <text x="63.500019" y="74.75" style="line-height:1.25" xml:space="preserve"><tspan x="63.500019" y="74.75" font-family="Raleway" font-weight="bold" stroke-width=".26458">most</tspan></text>
+   <text x="92.604195" y="74.75" style="line-height:1.25" xml:space="preserve"><tspan x="92.604195" y="74.75" font-family="Raleway" stroke-width=".26458">ULK</tspan></text>
+   <text x="129.64584" y="74.75" style="line-height:1.25" xml:space="preserve"><tspan x="129.64584" y="74.75" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">66 644</tspan></text>
+   <text x="145.52084" y="74.75" style="line-height:1.25" xml:space="preserve"><tspan x="145.52084" y="74.75" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">5</tspan></text>
+   <text x="169.33333" y="74.75" style="line-height:1.25" xml:space="preserve"><tspan x="169.33333" y="74.75" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">86.94</tspan></text>
+  </g>
+  <rect x="58.208" y="77.396" width="116.42" height="7.9375" fill="#fff"/>
+  <g fill="#000000" font-family="Lato" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+   <text x="63.500019" y="82.6875" style="line-height:1.25" xml:space="preserve"><tspan x="63.500019" y="82.6875" font-family="Raleway" font-weight="bold" stroke-width=".26458">olomouc</tspan></text>
+   <text x="92.604195" y="82.6875" style="line-height:1.25" xml:space="preserve"><tspan x="92.604195" y="82.6875" font-family="Raleway" stroke-width=".26458">OLK</tspan></text>
+   <text x="129.64584" y="82.6875" style="line-height:1.25" xml:space="preserve"><tspan x="129.64584" y="82.6875" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">100 494</tspan></text>
+   <text x="145.52084" y="82.6875" style="line-height:1.25" xml:space="preserve"><tspan x="145.52084" y="82.6875" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">7</tspan></text>
+   <text x="169.33333" y="82.6875" style="line-height:1.25" xml:space="preserve"><tspan x="169.33333" y="82.6875" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">103.36</tspan></text>
+  </g>
+  <rect x="58.208" y="85.333" width="116.42" height="7.9375" fill="#ffffb9"/>
+  <g fill="#000000" font-family="Lato" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+   <text x="63.500015" y="90.625" style="line-height:1.25" xml:space="preserve"><tspan x="63.500015" y="90.625" font-family="Raleway" font-weight="bold" stroke-width=".26458">ostrava</tspan></text>
+   <text x="92.604195" y="90.625" style="line-height:1.25" xml:space="preserve"><tspan x="92.604195" y="90.625" font-family="Raleway" stroke-width=".26458">MSK</tspan></text>
+   <text x="129.64584" y="90.625" style="line-height:1.25" xml:space="preserve"><tspan x="129.64584" y="90.625" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">290 450</tspan></text>
+   <text x="145.52084" y="90.625" style="line-height:1.25" xml:space="preserve"><tspan x="145.52084" y="90.625" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">15</tspan></text>
+   <text x="169.33333" y="90.625" style="line-height:1.25" xml:space="preserve"><tspan x="169.33333" y="90.625" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">214.23</tspan></text>
+  </g>
+  <rect x="58.208" y="93.271" width="116.42" height="7.9375" fill="#fff"/>
+  <g fill="#000000" font-family="Lato" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+   <text x="63.500015" y="98.5625" style="line-height:1.25" xml:space="preserve"><tspan x="63.500015" y="98.5625" font-family="Raleway" font-weight="bold" stroke-width=".26458">plzen</tspan></text>
+   <text x="92.604195" y="98.5625" style="line-height:1.25" xml:space="preserve"><tspan x="92.604195" y="98.5625" font-family="Raleway" stroke-width=".26458">PLK</tspan></text>
+   <text x="129.64584" y="98.5625" style="line-height:1.25" xml:space="preserve"><tspan x="129.64584" y="98.5625" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">170 936</tspan></text>
+   <text x="145.52084" y="98.5625" style="line-height:1.25" xml:space="preserve"><tspan x="145.52084" y="98.5625" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">3</tspan></text>
+   <text x="169.33333" y="98.5625" style="line-height:1.25" xml:space="preserve"><tspan x="169.33333" y="98.5625" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">137.65</tspan></text>
+  </g>
+  <rect x="58.208" y="101.21" width="116.42" height="7.9375" fill="#ffffb9"/>
+  <g fill="#000000" font-family="Lato" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+   <text x="63.500027" y="106.5" style="line-height:1.25" xml:space="preserve"><tspan x="63.500027" y="106.5" font-family="Raleway" font-weight="bold" stroke-width=".26458">praha</tspan></text>
+   <text x="92.60421" y="106.5" style="line-height:1.25" xml:space="preserve"><tspan x="92.60421" y="106.5" font-family="Raleway" stroke-width=".26458">PHA</tspan></text>
+   <text x="129.64586" y="106.5" style="line-height:1.25" xml:space="preserve"><tspan x="129.64586" y="106.5" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">1 294 513</tspan></text>
+   <text x="145.52086" y="106.5" style="line-height:1.25" xml:space="preserve"><tspan x="145.52086" y="106.5" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">24</tspan></text>
+   <text x="169.33334" y="106.5" style="line-height:1.25" xml:space="preserve"><tspan x="169.33334" y="106.5" font-family="Raleway" stroke-width=".26458" text-align="end" text-anchor="end">496.00</tspan></text>
+  </g>
+  <rect x="58.208" y="37.708" width="116.42" height="7.9375" fill="#fff"/>
+  <g fill="#000000" font-family="Lato" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+   <text x="92.604195" y="43" style="line-height:1.25" xml:space="preserve"><tspan x="92.604195" y="43" font-family="Raleway" font-weight="bold" stroke-width=".26458">kraj</tspan></text>
+   <text x="105.83337" y="43" style="line-height:1.25" xml:space="preserve"><tspan x="105.83337" y="43" font-family="Raleway" font-weight="bold" stroke-width=".26458">obyvatel</tspan></text>
+   <text x="134.93753" y="43" style="line-height:1.25" xml:space="preserve"><tspan x="134.93753" y="43" font-family="Raleway" font-weight="bold" stroke-width=".26458">linek</tspan></text>
+   <text x="150.81252" y="43" style="line-height:1.25" xml:space="preserve"><tspan x="150.81252" y="43" font-family="Raleway" font-weight="bold" stroke-width=".26458">vymera</tspan></text>
+  </g>
+  <path d="m52.917 45.646h124.35" fill="none" marker-end="url(#Arrow2Mend)" stroke="#000" stroke-linecap="round" stroke-width=".66146"/>
+  <path d="m87.313 35.062 2.1e-5 76.729" fill="none" marker-end="url(#Arrow1Mend)" stroke="#000" stroke-linecap="round" stroke-width=".66146"/>
+  <g fill="#808080" font-family="Lato" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+   <text x="87.312538" y="32.416668" style="line-height:1.25" xml:space="preserve"><tspan x="87.312538" y="32.416668" fill="#808080" font-family="Raleway" font-weight="bold" stroke-width=".26458" text-align="center" text-anchor="middle">osa 0</tspan></text>
+   <text x="41.804192" y="47.233334" style="line-height:1.25" xml:space="preserve"><tspan x="41.804192" y="47.233334" fill="#808080" font-family="Raleway" font-weight="bold" stroke-width=".26458" text-align="center" text-anchor="middle">osa 1</tspan></text>
+   <text x="136.26042" y="32.416668" style="line-height:1.25" xml:space="preserve"><tspan x="136.26042" y="32.416668" fill="#808080" font-family="Raleway" font-weight="bold" stroke-width=".26458" text-align="center" text-anchor="middle">názvy sloupců</tspan></text>
+  </g>
+  <g fill="none" stroke="#808080" stroke-width=".52917">
+   <path d="m89.958 37.708v-1.3229l82.021 1e-6v1.3229"/>
+   <path d="m136.26 36.385v-2.6458"/>
+   <path d="m56.885 107.82h-1.3229v-59.531h1.3229"/>
+  </g>
+  <text x="42.33334" y="74.75" fill="#808080" font-family="Raleway" font-size="5.6444px" font-weight="bold" letter-spacing="0px" stroke-width=".26458" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="42.33334" y="74.75" text-align="center">názvy</tspan><tspan x="42.33334" y="81.829933" text-align="center">řádků</tspan></text>
+  <path d="m55.563 77.396h-2.6458" fill="none" stroke="#808080" stroke-width=".52917"/>
+  <g fill="#808080" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+   <text x="29.104166" y="50.9375" font-family="Lato" style="line-height:1.25" xml:space="preserve"><tspan x="29.104166" y="50.9375" fill="#808080" font-family="Raleway" font-weight="bold" stroke-width=".26458" text-align="end" text-anchor="end">0</tspan></text>
+   <text x="28.590517" y="58.875" font-family="Lato" style="line-height:1.25" xml:space="preserve"><tspan x="28.590517" y="58.875" fill="#808080" font-family="Raleway" font-weight="bold" stroke-width=".26458" text-align="end" text-anchor="end">1</tspan></text>
+   <text x="28.906607" y="66.8125" font-family="Lato" style="line-height:1.25" xml:space="preserve"><tspan x="28.906607" y="66.8125" fill="#808080" font-family="Raleway" font-weight="bold" stroke-width=".26458" text-align="end" text-anchor="end">2</tspan></text>
+   <text x="28.963047" y="74.75" font-family="Lato" style="line-height:1.25" xml:space="preserve"><tspan x="28.963047" y="74.75" fill="#808080" font-family="Raleway" font-weight="bold" stroke-width=".26458" text-align="end" text-anchor="end">3</tspan></text>
+   <text x="29.087225" y="82.6875" font-family="Lato" style="line-height:1.25" xml:space="preserve"><tspan x="29.087225" y="82.6875" fill="#808080" font-family="Raleway" font-weight="bold" stroke-width=".26458" text-align="end" text-anchor="end">4</tspan></text>
+   <text x="28.979975" y="90.625" font-family="Lato" style="line-height:1.25" xml:space="preserve"><tspan x="28.979975" y="90.625" fill="#808080" font-family="Raleway" font-weight="bold" stroke-width=".26458" text-align="end" text-anchor="end">5</tspan></text>
+   <text x="29.12673" y="98.5625" font-family="Lato" style="line-height:1.25" xml:space="preserve"><tspan x="29.12673" y="98.5625" fill="#808080" font-family="Raleway" font-weight="bold" stroke-width=".26458" text-align="end" text-anchor="end">6</tspan></text>
+   <text x="29.104166" y="106.5" font-family="Lato" style="line-height:1.25" xml:space="preserve"><tspan x="29.104166" y="106.5" fill="#808080" font-family="Raleway" font-weight="bold" stroke-width=".26458" text-align="end" text-anchor="end">7</tspan></text>
+   <text x="29.082117" y="36.385418" font-family="Raleway" font-weight="bold" text-anchor="end" style="line-height:1.25" xml:space="preserve"><tspan x="30.427084" y="36.385418" text-align="end">pozice </tspan><tspan x="29.082117" y="43.465351" text-align="end">řádků</tspan></text>
+   <text x="92.604195" y="21.833332" font-family="Lato" style="line-height:1.25" xml:space="preserve"><tspan x="92.604195" y="21.833332" fill="#808080" font-family="Raleway" font-weight="bold" stroke-width=".26458">0</tspan></text>
+   <text x="105.83337" y="21.833332" font-family="Lato" style="line-height:1.25" xml:space="preserve"><tspan x="105.83337" y="21.833332" fill="#808080" font-family="Raleway" font-weight="bold" stroke-width=".26458">1</tspan></text>
+   <text x="134.93753" y="21.833332" font-family="Lato" style="line-height:1.25" xml:space="preserve"><tspan x="134.93753" y="21.833332" fill="#808080" font-family="Raleway" font-weight="bold" stroke-width=".26458">2</tspan></text>
+   <text x="150.81252" y="21.833332" font-family="Lato" style="line-height:1.25" xml:space="preserve"><tspan x="150.81252" y="21.833332" fill="#808080" font-family="Raleway" font-weight="bold" stroke-width=".26458">3</tspan></text>
+   <text x="136.26042" y="13.895834" font-family="Lato" style="line-height:1.25" xml:space="preserve"><tspan x="136.26042" y="13.895834" fill="#808080" font-family="Raleway" font-weight="bold" stroke-width=".26458" text-align="center" text-anchor="middle">pozice sloupců</tspan></text>
+  </g>
+ </g>
+</svg>
