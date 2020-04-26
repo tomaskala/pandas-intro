@@ -57,6 +57,10 @@ mesta.columns
 
 mesta.describe()
 
+# Prvních pár řádků tabulky.
+
+mesta.head()
+
 # ## 02 Základní selekce
 
 # ![DataFrame](dataframe.svg)
@@ -141,6 +145,8 @@ mesta.to_json("data.json", indent=4)
 
 # ## 04 Index
 
+# ![DataFrame](dataframe.svg)
+
 mesta = pandas.read_csv('mesta.csv', encoding='utf-8')
 mesta
 
@@ -152,23 +158,65 @@ mesta.set_index("mesto")
 
 # ## 05 Dotazy jako v SQL
 
+# Srovnáním DataFrame s tabulkou podobnost s databázemi nekončí. Pandas umožňují dotazovat se nad daty podobným způsobem jako SQL.
 
+mesta = pandas.read_csv("mesta.csv", index_col="mesto", encoding="utf-8")
+mesta
 
 # ### Výběr sloupečků
 
+# **SQL:** `SELECT linky, obyvatel FROM mesta;`
 
+mesta[["linky", "obyvatel"]]
 
 # ### Podmínky
 
+# **SQL:** `SELECT * FROM mesta WHERE linky > 10;`
 
+mesta[mesta["linky"] > 10]
+
+# **SQL:** `SELECT kraj, vymera FROM mesta WHERE vymera >= 100 AND vymera <= 200;`
+
+mesta[(mesta["vymera"] >= 100) & (mesta["vymera"] <= 200)][["kraj", "vymera"]]
+
+mesta.loc[(mesta['vymera'] >= 100) & (mesta['vymera'] <= 200), ["kraj", "vymera"]]
 
 # ### Logické operátory v podmínkách
 
+# **SQL:** `SELECT linky FROM mesta WHERE kraj = 'JHM' OR kraj = 'OLK';`
 
+mesta[(mesta['kraj'] == 'JHM') | (mesta['kraj'] == 'OLK')][['linky']]
+
+# **SQL:** `SELECT linky FROM mesta WHERE kraj IN ('JHM', 'ULK', 'OLK');`
+
+mesta[mesta['kraj'].isin(['JHM', 'ULK', 'OLK'])][['linky']]
+
+# **SQL:** `SELECT linky FROM mesta WHERE kraj NOT IN ('JHM', 'ULK', 'OLK');`
+
+mesta[~mesta['kraj'].isin(['JHM', 'ULK', 'OLK'])][['linky']]
 
 # ## 06 Převod mezi DataFrame a seznamy
 
+# ### DataFrame -> seznam
 
+mesta.values.tolist()
+
+# V datech chybí názvy měst. Pandas totiž nebere index jako součást dat, ale jen jako popis tabulky. Je tedy potřeba ho do tabulky nejdřív dostat.
+
+mesta.reset_index()
+
+mesta_seznam = mesta.reset_index().values.tolist()
+mesta_seznam
+
+# Pozor, `list(mesta)` nedělá to co bychom čekali.
+
+list(mesta)
+
+# ### Seznam -> DataFrame
+
+pandas.DataFrame(mesta_seznam)
+
+pandas.DataFrame(mesta_seznam, columns=["mesto", "kraj", "obyvatel", "linky", "vymera"])
 
 # ## B Cvičení
 
