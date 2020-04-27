@@ -22,7 +22,8 @@
 # Pandas:
 # * Je základní knihovna pro práci s daty v Pythonu.
 # * Velká část datové analýzy obnáší právě práci s Pandas.
-# * Datový soubor reprezentuje podobně jako tabulka v databázích, "DataFrame".
+# * Datový soubor reprezentuje podobně jako tabulka v databázích nebo v Excelu, "DataFrame".
+#     * Stejně jako jsme se učili seznamy a slovníky, DataFrame je další datový typ pro ukládání dat.
 
 # ## 1. Základní práce s DataFrame
 
@@ -36,6 +37,8 @@
 import pandas
 
 # Příklad: tabulka měst provozujících tramvajovou dopravu.
+
+# !cat mesta.csv
 
 mesta = pandas.read_csv("mesta.csv", index_col="mesto", encoding="utf-8")
 mesta
@@ -67,6 +70,8 @@ mesta.head()
 # ## 2. Základní selekce
 
 # ![DataFrame](dataframe.svg)
+
+# Výběr hodnot v tabulce probíhá převážně pomocí "metody" `loc`.
 
 # ### Výběr podle jmen řádků a sloupců
 
@@ -148,9 +153,15 @@ mesta.to_json("data.json", indent=4)
 
 # ## 4. Index
 
-# ![DataFrame](dataframe.svg)
+# Pokud index explicitně nevytvoříme jako v příkladu předtím, Pandas ho vytvoří automaticky číselný. Je to podobné jako číslování řádků v Excelu, každá tabulka má index. Jde jen o to, že si ho můžeme pojmenovat sami, máme-li k tomu rozumný důvod.
 
-mesta = pandas.read_csv('mesta.csv', encoding='utf-8')
+# Připomenutí: takhle vypadal náš DataFrame doteď.
+
+mesta
+
+# Nespecifikujeme explicitní index.
+
+mesta = pandas.read_csv("mesta.csv", encoding="utf-8")
 mesta
 
 # Index je teď číselný. Přístup pomocí názvu řádků (`loc`) nebo pomocí jejich čísel (`iloc`) je teď velmi podobný. Jediný rozdíl je v indexování rozsahem.
@@ -166,6 +177,8 @@ mesta.set_index("mesto")
 # ## 5. Dotazy jako v SQL
 
 # Srovnáním DataFrame s tabulkou podobnost s databázemi nekončí. Pandas umožňují dotazovat se nad daty podobným způsobem jako SQL.
+#
+# Vrátíme názvy měst jako index pro lepší srozumitelnost.
 
 mesta = pandas.read_csv("mesta.csv", index_col="mesto", encoding="utf-8")
 mesta
