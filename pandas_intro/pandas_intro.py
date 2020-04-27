@@ -140,8 +140,6 @@ mesta.to_html("data.html")
 
 mesta.to_excel("data.xls")
 
-mesta.to_html("data.html")
-
 mesta.to_json("data.json", indent=4)
 
 # ## A Cvičení
