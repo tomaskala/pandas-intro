@@ -33,6 +33,7 @@
     * Výběr řádků/sloupců/obojího pomocí názvu.
     * `df.loc[radky]` vybere dané řádky a všechny sloupce.
     * `df.loc[:, sloupce]` vybere všechny řádky a dané sloupce.
+        * Možno zkrátit na `df[sloupce]`. Pro výběr řádků podle jmen taková zkratka není.
     * `df.loc[radky, sloupce]` vybere dané řádky i sloupce.
     * Výběr řádků/sloupců je vždý mozný pomocí názvu/seznamu/rozsahu, výběr řádků navíc ještě jako podmínka (viz sekce 5. Dotazy jako v SQL v Jupyter notebooku k 1. Pandas lekci).
 * `iloc`
