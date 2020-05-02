@@ -1,6 +1,6 @@
 # Pandas Intro
 
-Úvod do knihovny [Pandas](https://pandas.pydata.org/).
+Úvod do knihovny [Pandas](https://pandas.pydata.org/). Založeno na materiálech z [kodim.cz](http://kodim.cz/kurzy/python-data/).
 
 ## Souhrn probrané látky
 
