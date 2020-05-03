@@ -134,7 +134,46 @@ maturita.to_csv("maturita.csv", index=False)
 
 # ## 3. Joinování dat
 
+# Obdobou SQL příkazu `JOIN` je v Pandas funkce `merge`. K datasetu výsledků u maturitních zkoušek budeme joinovat data o předsedajících maturitních komisí v jednotlivých dnech.
 
+# !cat predsedajici.csv
+
+preds = pandas.read_csv("predsedajici.csv", encoding="utf-8")
+preds
+
+# Vyzkoušíme merge, zatím jen na místnosti u202.
+
+u202
+
+test = pandas.merge(u202, preds)
+test
+
+# Dostali jsme prázdný dataframe. To je proto, že defaultně `merge` dělá `INNER JOIN` přes všechny sloupce se stejnými jmény, zde `jméno` a `den`. Protože jedno `jméno` odpovídá studentovi a druhé předsedovi, nemáme žádný průnik.
+#
+# Nabízel by se `OUTER JOIN`, ale ten nepomůže.
+
+test = pandas.merge(u202, preds, how="outer")
+test
+
+# Tím se nám akorát promíchala jména studentů a předsedajících, navíc vznikla spousta nedefinovaných hodnot.
+
+# Ve skutečnosti potřebujeme provést `JOIN` jen podle sloupce `den` -- ke každému dnu známe předsedu komise a všechny studenty, kteří měli ten den zkoušku.
+
+test = pandas.merge(u202, preds, on="den")
+test
+
+# Skoro dobré, jen potřebujeme rozumně přejmenovat sloupce se jmény na jméno studenta a jméno předsedy.
+
+test = test.rename(columns={"jméno_x": "jméno_student", "jméno_y": "jméno_předseda"})
+test
+
+# To už vypadá dobře, provedeme tedy `JOIN` pro celý dataset a výsledek opět uložíme do CSV.
+
+maturita2 = pandas.merge(maturita, preds, on="den")
+maturita2 = maturita2.rename(columns={"jméno_x": "jméno_student", "jméno_y": "jméno_předseda"})
+maturita2.head()
+
+maturita2.to_csv("maturita2.csv", index=False)
 
 # ## 4. Grupování
 
