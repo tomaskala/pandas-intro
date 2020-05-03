@@ -1,0 +1,39 @@
+jméno,předmět,známka,den,místnost
+Lukáš Jurčík,Dějepis,3.0,pá,u202
+Pavel Horák,Matematika,2.0,út,u202
+Lukáš Jurčík,Společenské vědy,2.0,pá,u202
+Pavel Kysilka,Biologie,1.0,pá,u202
+Kateřina Novotná,Dějepis,1.0,po,u202
+Marie Krejcárková,Fyzika,2.0,čt,u202
+Vasil Lácha,Dějepis,4.0,po,u202
+Alexey Opatrný,Matematika,2.0,po,u202
+Miroslav Bednář,Chemie,2.0,st,u202
+Pavel Horák,Chemie,5.0,út,u202
+Ivana Dvořáková,Matematika,1.0,st,u202
+Lenka Jarošová,Biologie,4.0,st,u202
+Miroslav Bednář,Dějepis,5.0,st,u202
+Kateřina Novotná,Společenské vědy,3.0,po,u203
+Arnošt Sas,Matematika,5.0,po,u203
+Vasil Lácha,Informatika,3.0,po,u203
+Lenka Jarošová,Fyzika,3.0,st,u203
+Marie Kortusová,Fyzika,3.0,st,u203
+Monika Dudysová,Chemie,3.0,pá,u203
+Josef Vodseďálek,Informatika,2.0,út,u203
+Alexey Opatrný,Zeměpis,1.0,po,u203
+Antonín Hlídek,Fyzika,4.0,po,u203
+Monika Dudysová,Společenské vědy,3.0,pá,u203
+Filip Lacina,Fyzika,2.0,čt,u203
+Marta Kinclová,Biologie,4.0,st,u203
+Martina Korbářová,Zeměpis,3.0,út,u203
+Petr Tábor,Informatika,1.0,po,u302
+Petr Tábor,Společenské vědy,1.0,po,u302
+Marie Krejcárková,Matematika,5.0,čt,u302
+Pavel Kysilka,Informatika,1.0,pá,u302
+Josef Vodseďálek,Biologie,2.0,út,u302
+Filip Lacina,Matematika,1.0,čt,u302
+Marta Kinclová,Informatika,4.0,st,u302
+Ivana Dvořáková,Chemie,5.0,st,u302
+Marie Kortusová,Dějepis,3.0,st,u302
+Arnošt Sas,Chemie,4.0,po,u302
+Martina Korbářová,Informatika,3.0,út,u302
+Antonín Hlídek,Matematika,3.0,po,u302
