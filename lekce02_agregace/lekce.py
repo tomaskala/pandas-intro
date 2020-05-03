@@ -66,6 +66,12 @@ relativni_cetnost
 
 u202["známka"].isnull().mean()
 
+# Side note: ten formát co ukazuje 8347359378947389347 desetinných míst není moc čitelný.
+
+print(f"Chybí {relativni_cetnost * 100:.02f} % hodnot.")
+
+# Mnohem lepší.
+
 # ### Jak zahodit řádky s chybějícími hodnotami?
 
 u202
@@ -157,7 +163,7 @@ test
 
 # Tím se nám akorát promíchala jména studentů a předsedajících, navíc vznikla spousta nedefinovaných hodnot.
 
-# Ve skutečnosti potřebujeme provést `JOIN` jen podle sloupce `den` -- ke každému dnu známe předsedu komise a všechny studenty, kteří měli ten den zkoušku.
+# Ve skutečnosti potřebujeme provést `JOIN` jen podle sloupce `den` -- ke každému dni známe předsedu komise a všechny studenty, kteří měli ten den zkoušku.
 
 test = pandas.merge(u202, preds, on="den")
 test
@@ -176,5 +182,66 @@ maturita2.head()
 maturita2.to_csv("maturita2.csv", index=False)
 
 # ## 4. Grupování
+
+# Pandí obdoba databázové operace `GROUP BY` se nazývá... `groupby`.
+
+maturita2.head()
+
+groups = maturita2.groupby("místnost")
+
+# Jak to vypadá?
+
+groups
+
+# Wtf
+
+for key, item in groups:
+    print(key)
+    display(item)
+
+# Aha!
+
+groups.count()
+
+# Můžeme si spočítat průměrnou známku přes předměty.
+
+# Jako series.
+
+maturita2.groupby('předmět')['známka'].mean()
+
+# Jako dataframe.
+
+maturita2.groupby('předmět')[['známka']].mean()
+
+# Pandy nejsou blbé a průměry počítají jen z numerických sloupců, což je v našem případě jen `známka`.
+
+maturita2.groupby('předmět').mean()
+
+# Další agregační funkce jsou např.
+# * `sum` - součet hodnot
+# * `max` - maximální hodnota
+# * `min` - minimální hodnota
+# * `first` - první hodnota
+# * `last` - poslední hodnota
+# * `mean` - průměr z hodnot
+# * `median` - medián z hodnot
+# * `var` - rozptyl hodnot
+# * `std` - standardní odchylka hodnot
+# * `all` - True, pokud jsou všechny hodnoty True
+# * `any` - True, pokud je alespoň jedna z hodnot True
+
+# Můžeme se podívat, jak vypadaly známky mezi jednotlivými předsedy komise.
+
+groups_preds = maturita2.groupby("jméno_předseda")
+
+groups_preds.mean()
+
+groups_preds.median()
+
+groups_preds.std()
+
+# Když chceme víc agregačních najednou, můžeme použít funkci `agg` a dát jí seznam názvů funkcí, které chceme aplikovat.
+
+groups_preds.agg(["mean", "median", "std"])
 
 
