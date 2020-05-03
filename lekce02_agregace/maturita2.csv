@@ -1,0 +1,39 @@
+jméno_student,předmět,známka,den,místnost,datum,jméno_předseda
+Lukáš Jurčík,Dějepis,3.0,pá,u202,24.5.2019,Alena Pniáčková
+Lukáš Jurčík,Společenské vědy,2.0,pá,u202,24.5.2019,Alena Pniáčková
+Pavel Kysilka,Biologie,1.0,pá,u202,24.5.2019,Alena Pniáčková
+Monika Dudysová,Chemie,3.0,pá,u203,24.5.2019,Alena Pniáčková
+Monika Dudysová,Společenské vědy,3.0,pá,u203,24.5.2019,Alena Pniáčková
+Pavel Kysilka,Informatika,1.0,pá,u302,24.5.2019,Alena Pniáčková
+Pavel Horák,Matematika,2.0,út,u202,21.5.2019,Marie Zuzaňáková
+Pavel Horák,Chemie,5.0,út,u202,21.5.2019,Marie Zuzaňáková
+Josef Vodseďálek,Informatika,2.0,út,u203,21.5.2019,Marie Zuzaňáková
+Martina Korbářová,Zeměpis,3.0,út,u203,21.5.2019,Marie Zuzaňáková
+Josef Vodseďálek,Biologie,2.0,út,u302,21.5.2019,Marie Zuzaňáková
+Martina Korbářová,Informatika,3.0,út,u302,21.5.2019,Marie Zuzaňáková
+Kateřina Novotná,Dějepis,1.0,po,u202,20.5.2019,Marie Zuzaňáková
+Vasil Lácha,Dějepis,4.0,po,u202,20.5.2019,Marie Zuzaňáková
+Alexey Opatrný,Matematika,2.0,po,u202,20.5.2019,Marie Zuzaňáková
+Kateřina Novotná,Společenské vědy,3.0,po,u203,20.5.2019,Marie Zuzaňáková
+Arnošt Sas,Matematika,5.0,po,u203,20.5.2019,Marie Zuzaňáková
+Vasil Lácha,Informatika,3.0,po,u203,20.5.2019,Marie Zuzaňáková
+Alexey Opatrný,Zeměpis,1.0,po,u203,20.5.2019,Marie Zuzaňáková
+Antonín Hlídek,Fyzika,4.0,po,u203,20.5.2019,Marie Zuzaňáková
+Petr Tábor,Informatika,1.0,po,u302,20.5.2019,Marie Zuzaňáková
+Petr Tábor,Společenské vědy,1.0,po,u302,20.5.2019,Marie Zuzaňáková
+Arnošt Sas,Chemie,4.0,po,u302,20.5.2019,Marie Zuzaňáková
+Antonín Hlídek,Matematika,3.0,po,u302,20.5.2019,Marie Zuzaňáková
+Marie Krejcárková,Fyzika,2.0,čt,u202,23.5.2019,Petr Ortinský
+Filip Lacina,Fyzika,2.0,čt,u203,23.5.2019,Petr Ortinský
+Marie Krejcárková,Matematika,5.0,čt,u302,23.5.2019,Petr Ortinský
+Filip Lacina,Matematika,1.0,čt,u302,23.5.2019,Petr Ortinský
+Miroslav Bednář,Chemie,2.0,st,u202,22.5.2019,Petr Ortinský
+Ivana Dvořáková,Matematika,1.0,st,u202,22.5.2019,Petr Ortinský
+Lenka Jarošová,Biologie,4.0,st,u202,22.5.2019,Petr Ortinský
+Miroslav Bednář,Dějepis,5.0,st,u202,22.5.2019,Petr Ortinský
+Lenka Jarošová,Fyzika,3.0,st,u203,22.5.2019,Petr Ortinský
+Marie Kortusová,Fyzika,3.0,st,u203,22.5.2019,Petr Ortinský
+Marta Kinclová,Biologie,4.0,st,u203,22.5.2019,Petr Ortinský
+Marta Kinclová,Informatika,4.0,st,u302,22.5.2019,Petr Ortinský
+Ivana Dvořáková,Chemie,5.0,st,u302,22.5.2019,Petr Ortinský
+Marie Kortusová,Dějepis,3.0,st,u302,22.5.2019,Petr Ortinský
