@@ -47,3 +47,65 @@
     * `reset_index(drop=True)` udělá to samé, ale starý index úplně zahodí, nepřesune ho do sloupců.
 * `index`
     * Získá index daného DataFrame.
+
+### Lekce 2 - agregace
+
+#### Funkce nad Pandas
+* `concat([df1, df2, df3, ...])`
+    * Spojí daný seznam DataFrames pod sebe.
+    * Defaultně naskládá za sebe i jejich indexy, čímž se tam typicky objeví duplikáty.
+    * `concat([df1, df2, df3, ...], ignore_index=True)` udělá to samé, ale index vytvoří nový číselný.
+* `merge(df1, df2)`
+    * Ekvivalent `JOIN` v SQL, defaultně provádí `INNER JOIN` přes všechny sloupce, které mají v obou DataFrames stejný název.
+    * Možno dodat parametr `how=typ_joinu`, kde `typ_joinu` je jeden z `"left"`, `"right"`, `"outer"`, `"inner"`.
+    * Také je možné dodat parametr `on=x`, kde `x` je buď název sloupce (je-li 1), nebo seznam názvů sloupců, podle kterých se má dělat `JOIN`.
+
+#### Funkce nad DataFrame
+* `dropna()`
+    * Zahodí řádky s chybějícími hodnotami.
+    * Zkrácená verze `dropna(axis="index")`.
+* `dropna(axis="columns")`
+    * Zahodí sloupce s chybějícími hodnotami.
+* `fillna(x)`
+    * Nahradí chybějící hodnoty hodnotou `x`.
+* `rename(columns=slovnik)`
+    * Přejmenuje sloupce v DataFrame pomocí slovníku, jehož klíče jsou staré názvy a jim odpovídající hodnoty jsou nové názvy. Pokud nějaký sloupec ve slovníku neuvedeme, jeho název se nezmění.
+* `groupby(x)`
+    * Seskupí hodnoty v DataFrame podle sloupce/seznamu sloupců `x`.
+    * Vrací `DataFrameGroupBy object`.
+
+#### Funkce nad DataFrameGroupBy object
+* `count()`
+    * Četnost hodnot, zadnedbává chybející hodnoty.
+* `sum()`
+    * Součet hodnot.
+* `max()`
+    * Maximální hodnota.
+* `min()`
+    * Minimální hodnota.
+* `first()`
+    * První hodnota.
+* `last()`
+    * Poslední hodnota.
+* `mean()`
+    * Průměr z hodnot.
+* `median()`
+    * Medián z hodnot.
+* `var()`
+    * Rozptyl hodnot.
+* `std()`
+    * Směrodatná odchylka hodnot.
+* `all()`
+    * True, pokud jsou všechny hodnoty True.
+* `any()`
+    * True, pokud je alespoň jedna z hodnot True.
+* `agg([fun1, fun2, fun3, ...])`
+    * Aplikuje seznam agregačních funkcí daných jako názvy funkcí vyjmenovaných výše.
+    * Např. tedy `df.agg(["mean", "max", "min", "std"])`.
+
+#### Funkce nad Series
+* `isnull()`
+    * Vrátí `True` na pozicích kde chybí hodnota a `False` na pozicích kde hodnota nechybí.
+    * Možno volat také nad DataFrame, pak vrací celý DataFrame takovýchto pravdivostních hodnot.
+* `astype(int)`
+    * Vrátí kopii Series převedenou na celočíselný typ.
