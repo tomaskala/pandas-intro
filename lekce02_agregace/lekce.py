@@ -240,7 +240,7 @@ groups_preds.median()
 
 groups_preds.std()
 
-# Když chceme víc agregačních najednou, můžeme použít funkci `agg` a dát jí seznam názvů funkcí, které chceme aplikovat.
+# Když chceme víc agregací najednou, můžeme použít funkci `agg` a dát jí seznam názvů funkcí, které chceme aplikovat.
 
 groups_preds.agg(["mean", "median", "std"])
 
