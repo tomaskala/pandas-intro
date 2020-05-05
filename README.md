@@ -73,6 +73,12 @@
 * `groupby(x)`
     * Seskupí hodnoty v DataFrame podle sloupce/seznamu sloupců `x`.
     * Vrací `DataFrameGroupBy object`.
+* `sort_values(by=x)` (bylo navíc kvůli dotazu)
+    * Seřadí řádky podle sloupce `x`, respektive seznamu sloupců `x`.
+    * Když dáme seznam sloupců, řadí nejprve podle prvního, pak podle druhého, atd.
+    * Lze volat i na Series.
+    * Bere parametr `ascending` (defaultně `True`), kterým ovládáme, jestli se má řadit vzestupně (`True`) nebo sestupně (`False`).
+    
 
 #### Funkce nad DataFrameGroupBy object
 * `count()`
