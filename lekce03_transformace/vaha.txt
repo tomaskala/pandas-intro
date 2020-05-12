@@ -1,0 +1,15 @@
+den	váha	běh	týden
+pá 3.	75,6 kg	3 km	1
+so 4.	75,3 kh	pauza	1
+ne 5.	75,9kg	pauza	1
+po 6.	76,1 kg	2 km	1
+út 7	75,4 kg	paza	1
+st 8.	75kg	pauza	1
+čt 9.	74,9 kg	3	1
+pá 10.	74,8 k	pauza	2
+so 11.	74,3kg	3 km	2
+ne 12	75,2 kg	4 km	2
+po 13.	74,5 kg		2
+út 14.	74,2 kg	pauza	2
+st 15.	74,1 kg	3 km	2
+čt 16	73,8 kg	3km	2
