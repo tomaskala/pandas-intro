@@ -48,7 +48,7 @@ print(area2)
 
 # -
 
-# Pokud potřebujeme spočítat obsah mnoha trojúhelníků, začne být otravné vypisovat pořád ten samý kód dokola.
+# Pokud potřebujeme spočítat obsah mnoha trojúhelníků, začne být otravné vypisovat pořád ten samý kód dokola. Navíc při častém opisování toho samého snadno uděláme chybu.
 #
 # Definujeme si funkci, která v parametrech dostane rozměry trojúhelníku a jako výsledek vrátí jeho obsah.
 
@@ -104,7 +104,7 @@ print(f"My sum: {my_sum2}")
 
 
 # ### Zápis do CSV
-# Funkce bez návratové hodnoty. Pozor, funkce je velmi zjednodušená, v praxi by se měly použít pandas nebo pythonovský modul pro práci s CSV soubory.
+# Funkce bez návratové hodnoty. Pozor, je velmi zjednodušená, v praxi by se měly použít pandas nebo pythonovský modul pro práci s CSV soubory.
 
 def write_to_csv(path, values):
     f = open(path, mode="w", encoding="utf-8")
@@ -270,7 +270,7 @@ vaha.dtypes
 
 # Definujeme si vlastní agregační funkci, podobně jako jsme posledně viděli funkce `mean`, `std` a podobné, volané na výsledku operace `groupby`.
 
-# Data seskupíme podle týdne a v každém týdnu napočítáme nějakou funkci váhy.
+# Data seskupíme podle týdne a v každém týdnu napočítáme nějakou funkci váhy. Zde např. průměrnou váhu v každém týdnu.
 
 vaha.groupby("týden")["váha"].mean()
 
@@ -283,11 +283,11 @@ def spread(series):
     return series.max() - series.min()
 
 
-# Nejprve funkci aplikujeme na jediný sloupec.
+# Nejprve funkci aplikujeme na jediný sloupec. Tím dostaneme rozpětí vah za celé sledované období.
 
 vaha["váha"].agg(spread)
 
-# A teď na celý groupby objekt.
+# A teď na groupby objekt -- za každý týden dostaneme rozpětí vah.
 
 vaha.groupby("týden")["váha"].agg(spread)
 
