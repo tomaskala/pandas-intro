@@ -115,3 +115,49 @@
     * Možno volat také nad DataFrame, pak vrací celý DataFrame takovýchto pravdivostních hodnot.
 * `astype(int)`
     * Vrátí kopii Series převedenou na celočíselný typ.
+
+### Lekce 3 - transformace
+
+#### Tvorba vlastních funkcí
+Funkce, která nebere žádné argumenty a nevrací žádný výsledek. Aby měla smysl, měla by mít nějaký tzv. vedlejší efekt, tedy něco vypisovat na obrazovku, do souboru, přes síť a podobně.
+```
+def <nazev_funkce>():
+    <kod>
+```
+
+Funkce, která nebere žádné argumenty a vrací výsledek. Může provést nějaký výpočet a vrátit jeho výsledek, ale nelze ji parametrizovat podle vstupu.
+```
+def <nazev_funkce>():
+    <kod>
+    return <vysledek>
+```
+
+Funkce, která bere argumenty a nevrací žádný výsledek. Podobné jako 1. případ, ale lze ji parametrizovat podle vstupu.
+```
+def <nazev_funkce>(<arg1>, <arg2>, ..., <argN>):
+    <kod>
+```
+
+Funkce, která bere argumenty a vrací výsledek. Kombinace předchozích dvou případů.
+```
+def <nazev_funkce>(<arg1>, <arg2>, ..., <argN>):
+    <kod>
+    return <vysledek>
+```
+
+#### Funkce nad Pandas
+* `to_numeric(series)`
+    * Převede danou Series do číselného typu. Je to čistší než volat `astype()`, protože tím jasně dáváme najevo, že očekáváme čísla. Navíc můžeme definovat co se má stát s hodnotami, které se nepovedlo převést.
+
+#### Funkce nad Series
+* `str`
+    * Obsahuje-li Series textové řetězce, umožňuje s ní pracovat jako s klasickým textem, tedy získat podřetězce, převádět velikost písmen, apod.
+    * `str.replace(what, with)`
+        * Nahradí všechny výskyty řetězce `what` řetězcem `with`.
+* `apply(function)`
+    * Vezme danou funkci, a aplikuje ji postupně na každý prvek Series. Vrací novou Series, jejíž hodnoty jsou výsledky volání dané funkce.
+    * Podobné chroustání seznamu.
+* `agg(function)`
+    * Už jsme potkali v minulé lekci, kde jsme funkci `agg` používali pro aplikaci víc agregačních funkcí najednou. Tehdy jsme jako vstup dávali seznam názvů (ve stringu) funkcí, které chceme aplikovat. Ty funkce ale musely existovat v pandas, proto jsme byli relativně omezeni (zas tak moc ne, pandas jich má dost).
+    * V této lekci jsme viděli, že funkci `agg` lze dát také námi definovanou agregační funkci. Tato námi definovaná funkce očekává jako vstup Series, jako výstup vrací číslo.
+    * Lze volat též nad DataFrameGroupBy object.
