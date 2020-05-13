@@ -106,17 +106,18 @@ print(f"My sum: {my_sum2}")
 # ### Zápis do CSV
 # Funkce bez návratové hodnoty. Pozor, je velmi zjednodušená, v praxi by se měly použít pandas nebo pythonovský modul pro práci s CSV soubory.
 
-def write_to_csv(path, values):
+def write_to_csv(path, nested_list):
     f = open(path, mode="w", encoding="utf-8")
     
-    for value in values:
-        f.write(",".join(value))
+    for inner_list in nested_list:
+        str_list = [str(v) for v in inner_list]
+        f.write(",".join(str_list))
         f.write("\n")
     
     f.close()
 
 
-data = [["hello", "python"], ["goodbye", "python"]]
+data = [["hello", "python"], ["goodbye", "python"], [123, 456]]
 write_to_csv("test.csv", data)
 
 # !cat test.csv
@@ -161,6 +162,8 @@ print(converted3)
 
 # ## 2. Transformace dat v Pandas
 
+# Budeme se snažit převést špatně formátovaná data do tvaru, se kterým se lépe pracuje. Něco takového řešíme v praxi v jednom kuse -- dostaneme horu dat, nic o nich nevíme a potřebujeme v nich udělat pořádek.
+#
 # Pracujeme s daty o hmotnosti Kristiána během 14 dnů, kdy se snažil zhubnout.
 
 # !cat vaha.txt
@@ -183,8 +186,6 @@ dny
 
 cislo_dne = dny.str[3:]
 cislo_dne
-
-# Alternativy: `split`, `replace`.
 
 # ### Zahodíme tečky
 
@@ -237,7 +238,7 @@ def prevod_vahy(vaha):
     return float(desetinna_tecka)
 
 
-# Takto definovanou funkci nyní použijeme jako parametr funkce `apply` volané na sloupci `váha`.
+# Takto definovanou funkci nyní použijeme jako parametr funkce `apply` volané na sloupci `váha`. Funkce `apply` vezme námi definovanou funkci, a aplikuje ji na každý prvek daného sloupce. Výsledkem je sloupec výsledků naší funkce.
 
 vaha["váha"] = vaha["váha"].apply(prevod_vahy)
 vaha
