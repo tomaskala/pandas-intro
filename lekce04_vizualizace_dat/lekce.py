@@ -150,4 +150,10 @@ ucet.cumsum().plot(figsize=(16, 10));
 
 ucet.cumsum().plot(kind="bar", grid=True, figsize=(16, 10));
 
+# # Co dál?
 
+# * [Dive Into Python](https://diveintopython3.net/)
+#     * Velmi pěkná kniha o Pythonu, projde i mnohem pokročilejší věci než jsme tu stihli probrat.
+#     * K dispozici zdarma online, lze koupit v tištěné podobě.
+#     * Existuje i [český překlad](http://diveintopython3.py.cz/index.html).
+# * Jinak se ptejte co by vás zajímalo a zkusíme dát dohromady nějaké zdroje.
