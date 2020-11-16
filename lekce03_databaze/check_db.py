@@ -9,8 +9,10 @@ except ImportError:
     print("pip install snowflake-connector-python")
     exit(1)
 except Exception as e:
-    print(">>> Nastala chyba pri importu snowflake connectoru.")
-    print(">>> Posli na czechichat chybu, ktera se zobrazila pod timhle textem.")
+    print(
+        ">>> Nastala neocekavana chyba (1). Vezmi chybu nize a posli ji "
+        "na czechichat."
+    )
     print(e)
     exit(1)
 
@@ -55,7 +57,7 @@ def main():
         exit(1)
     except Exception as e:
         print(
-            ">>> Nastala neocekavana chyba. Vezmi chybu nize a posli ji "
+            ">>> Nastala neocekavana chyba (2). Vezmi chybu nize a posli ji "
             "na czechichat."
         )
         print(e)
@@ -72,7 +74,7 @@ def main():
             exit(1)
         except Exception as e:
             print(
-                ">>> Nastala neocekavana chyba. Vezmi chybu nize a posli ji "
+                ">>> Nastala neocekavana chyba (3). Vezmi chybu nize a posli ji "
                 "na czechichat."
             )
             print(e)
