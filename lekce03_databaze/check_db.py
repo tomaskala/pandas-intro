@@ -46,7 +46,9 @@ def main():
             role=role,
         )
     except DatabaseError as e:
-        print(">>> Nastala chyba pri pripojeni k databazi. Patrne spatne jmeno nebo heslo.")
+        print(
+            ">>> Nastala chyba pri pripojeni k databazi. Patrne spatne jmeno nebo heslo."
+        )
         print(
             ">>> Podivej se na chybu, ktera se zobrazuje pod timhle textem. Pokud se tam "
             "pise, ze mas spatne jmeno nebo heslo, zadej spravne. Hint: pis oboji do "
@@ -68,8 +70,10 @@ def main():
             cursor.execute("SELECT current_version()")
             one_row = cursor.fetchone()
         except ProgrammingError as e:
-            print(">>> Chyba v SQL dotazu. To by se nemelo stat. Vezmi chybu nize "
-                  "a posli ji na czechichat.")
+            print(
+                ">>> Chyba v SQL dotazu. To by se nemelo stat. Vezmi chybu nize "
+                "a posli ji na czechichat."
+            )
             print(e)
             exit(1)
         except Exception as e:
