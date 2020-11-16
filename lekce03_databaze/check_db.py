@@ -53,6 +53,13 @@ def main():
         print(">>> Pokud se tam pise neco jineho, posli na tu chybu na czechichat.")
         print(e)
         exit(1)
+    except Exception as e:
+        print(
+            ">>> Nastala neocekavana chyba. Vezmi chybu nize a posli ji "
+            "na czechichat."
+        )
+        print(e)
+        exit(1)
 
     with conn.cursor() as cursor:
         try:
