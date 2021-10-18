@@ -18,10 +18,10 @@ except Exception as e:
 
 
 DATABASE = "COURSES"
-HOST = "https://aa85077.eu-central-1.snowflakecomputing.com/"
+HOST = "https://gn56074.west-europe.azure.snowflakecomputing.com"
 SCHEMA = "SCH_CZECHITA"
 WAREHOUSE = "COMPUTE_WH"
-ACCOUNT = "aa85077.eu-central-1"
+ACCOUNT = "gn56074.west-europe.azure"
 
 
 def main():
